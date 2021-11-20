@@ -79,7 +79,7 @@ int main(int argc, char* argv[]){
                     Mix_ResumeMusic();
             }
 			
-			//Input variable needs to be reset
+		//Input variable needs to be reset
                 input = '\0';
         }
 
@@ -88,7 +88,7 @@ int main(int argc, char* argv[]){
             if (Mix_PlayingMusic()){
                 Mix_HaltMusic(); //Stop playing a music
 				
-				//Reset variable and a vector
+		//Reset variable and a vector
                 input = '\0';
                 nome[0] = '\0';
 				
@@ -99,7 +99,7 @@ int main(int argc, char* argv[]){
                 music = Mix_LoadMUS(name);
                 printf("Music loaded successful! type P to play it\n");
             }else{
-				//Reset variable and a vector
+		//Reset variable and a vector
                 input = '\0';
                 nome[0] = '\0';
 				
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]){
         }
     }
 	
-	//Shutdown SDL2 and SDL2_mixer
+    //Shutdown SDL2 and SDL2_mixer
     close_program();
 
     return 0;
